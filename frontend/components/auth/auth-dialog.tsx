@@ -33,7 +33,7 @@ export function AuthDialog() {
           </DialogTitle>
           <DialogDescription>
             {dialogTab === "login"
-              ? "Use your campus email and password."
+              ? "Use your email and password."
               : "Register with your student details."}
           </DialogDescription>
         </DialogHeader>
