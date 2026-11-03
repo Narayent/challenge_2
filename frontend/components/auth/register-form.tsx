@@ -75,7 +75,6 @@ export function RegisterForm({ onSuccess }: { onSuccess?: () => void }) {
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     setSubmitted(true);
-    // Client-side validation is for UX only; the backend must validate too.
     const result = validate(registerSchema, values);
     if (!result.success) {
       setErrors(result.errors);
